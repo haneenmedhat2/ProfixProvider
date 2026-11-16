@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UpdateServiceVC" customModule="ProfixProvider" customModuleProvider="target">
+            <connections>
+                <outlet property="mainCategoryTextField" destination="ned-IC-vav" id="p1u-DB-0bU"/>
+                <outlet property="serviceDescTextView" destination="1T8-0o-zn2" id="fwe-im-XhL"/>
+                <outlet property="servicePriceTextField" destination="rvG-Dl-moy" id="a1K-vG-1II"/>
+                <outlet property="serviceTextField" destination="kag-GG-OFA" id="tRC-tj-Ts8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="417.33333333333326" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="4R5-Vs-plO" userLabel="ContentStackView">
+                    <rect key="frame" x="0.0" y="117.99999999999997" width="393" height="417.33333333333326"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="JGb-6e-x3f" userLabel="TextFieldsStackView">
+                            <rect key="frame" x="16" y="16" width="361" height="337.33333333333331"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="345" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="ned-IC-vav" userLabel="MainCategoriesTextField" customClass="PickerFieldView" customModule="ProfixProvider" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="66"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="titleTxt" value="main_category"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isLabelHidden" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolderTxt" value="select_main_category"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isButtonHidden" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="stackBackgroundColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRequiredProperty" value="NO"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="keyboardTypeRawValue">
+                                            <integer key="value" value="7"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="icon" value="construction"/>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="stackBorderColor">
+                                            <color key="value" name="TextFieldBackground"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="345" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="kag-GG-OFA" userLabel="ServiceTextField" customClass="PickerFieldView" customModule="ProfixProvider" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="68" width="361" height="50"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="titleTxt" value="service"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isLabelHidden" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolderTxt" value="select_service"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isButtonHidden" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="stackBackgroundColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRequiredProperty" value="NO"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="keyboardTypeRawValue">
+                                            <integer key="value" value="7"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="icon" value="document 1"/>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="stackBorderColor">
+                                            <color key="value" name="TextFieldBackground"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="345" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="rvG-Dl-moy" userLabel="ServicePriceTextField" customClass="GeneralTextField" customModule="ProfixProvider" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="120" width="361" height="50"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRequiredProperty" value="NO"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="titleTxt" value="service_price"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isLabelHidden" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolderTxt" value="service_price"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isButtonHidden" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="stackBackgroundColor">
+                                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="icon" value="credit-card"/>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="stackBorderColor">
+                                            <color key="value" name="TextFieldBackground"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="keyboardTypeRawValue">
+                                            <integer key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1T8-0o-zn2" userLabel="ServiceDescTextView" customClass="DropDownTextView" customModule="ProfixProvider" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="172" width="361" height="165.33333333333337"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholderLocalizedKey" value="add_complaint_details_placeholder"/>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="icon" value="mail-open-01"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="titleLocalizedKey" value="complaint_details"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRequiredProperty" value="NO"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isButtonHidden" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isIconidden" value="NO"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isLabelHidden" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="titleTxt" value="service_description"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="add_service_description"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4jP-gU-8hD" userLabel="Confirm" customClass="MainButton" customModule="ProfixProvider" customModuleProvider="target">
+                            <rect key="frame" x="16" y="369.33333333333331" width="361" height="32"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Button"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="confirm"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="didTapConfirm:" destination="-1" eventType="touchUpInside" id="bgb-ea-ZMU"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <edgeInsets key="layoutMargins" top="16" left="16" bottom="16" right="16"/>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="4R5-Vs-plO" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="1ig-JZ-FYQ"/>
+                <constraint firstItem="4R5-Vs-plO" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="7yY-yY-kY1"/>
+                <constraint firstItem="4R5-Vs-plO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cup-dF-dpy"/>
+            </constraints>
+            <point key="canvasLocation" x="-5" y="127"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="construction" width="24" height="24"/>
+        <image name="credit-card" width="24" height="24"/>
+        <image name="document 1" width="24" height="24"/>
+        <image name="mail-open-01" width="24" height="24"/>
+        <namedColor name="TextFieldBackground">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

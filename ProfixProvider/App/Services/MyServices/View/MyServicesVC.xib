@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyServicesVC" customModule="ProfixProvider" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="YWR-sl-xLi" id="oUI-SX-zNf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="QQM-uW-qCV" userLabel="ContainerStackView">
+                    <rect key="frame" x="0.0" y="134" width="393" height="634"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="YWR-sl-xLi">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="502"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ev9-wc-k8a">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gG-d1-RdZ" userLabel="AddNewServiceButton" customClass="MainButton" customModule="ProfixProvider" customModuleProvider="target">
+                            <rect key="frame" x="16" y="518" width="361" height="116"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Button"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="add_new_service"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="didTapAddNewService:" destination="-1" eventType="touchUpInside" id="ckd-PF-KyE"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="YWR-sl-xLi" secondAttribute="trailing" id="1hr-67-q5g"/>
+                        <constraint firstItem="7gG-d1-RdZ" firstAttribute="leading" secondItem="QQM-uW-qCV" secondAttribute="leading" constant="16" id="Dpa-aT-ngi"/>
+                        <constraint firstAttribute="trailing" secondItem="7gG-d1-RdZ" secondAttribute="trailing" constant="16" id="HIa-Af-kJP"/>
+                        <constraint firstItem="YWR-sl-xLi" firstAttribute="leading" secondItem="QQM-uW-qCV" secondAttribute="leading" id="mQe-SW-wwm"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="QQM-uW-qCV" secondAttribute="bottom" constant="16" id="DcE-mv-G0Y"/>
+                <constraint firstItem="QQM-uW-qCV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="L4D-nB-5Th"/>
+                <constraint firstItem="QQM-uW-qCV" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="VYf-q4-BhM"/>
+                <constraint firstItem="QQM-uW-qCV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="d87-an-FwO"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="154"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

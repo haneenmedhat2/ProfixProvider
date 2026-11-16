@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProblemDescView" customModule="Profix" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="0N8-kT-aMP" id="BuZ-gr-sSM"/>
+                <outlet property="descTextView" destination="WKb-6V-8AS" id="JxL-Ym-4rX"/>
+                <outlet property="descView" destination="NzE-y3-zFS" id="a7w-co-6T0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="824" height="244"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Qtm-26-Kso" userLabel="DescStackView">
+                    <rect key="frame" x="0.0" y="0.0" width="824" height="244"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Problem Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s6h-bx-ktE">
+                            <rect key="frame" x="0.0" y="0.0" width="824" height="19.333333333333332"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="problem_description"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NzE-y3-zFS" userLabel="DescView">
+                            <rect key="frame" x="0.0" y="25.333333333333329" width="824" height="218.66666666666669"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YFr-Me-ktn" userLabel="DescStackView">
+                                    <rect key="frame" x="12" y="12" width="800" height="194.66666666666666"/>
+                                    <subviews>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="ugugukgikgil" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WKb-6V-8AS" userLabel="descTextView">
+                                            <rect key="frame" x="0.0" y="0.0" width="800" height="122.66666666666667"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="textColor" name="hintColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES" shipmentTrackingNumber="YES" flightNumber="YES" lookupSuggestion="YES"/>
+                                        </textView>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="0N8-kT-aMP">
+                                            <rect key="frame" x="0.0" y="122.66666666666666" width="800" height="72"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="72" id="LxM-xO-bqP"/>
+                                            </constraints>
+                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hY8-Aa-NLm">
+                                                <size key="itemSize" width="128" height="128"/>
+                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            </collectionViewFlowLayout>
+                                        </collectionView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" name="StateColor"/>
+                            <constraints>
+                                <constraint firstItem="YFr-Me-ktn" firstAttribute="top" secondItem="NzE-y3-zFS" secondAttribute="top" constant="12" id="8Bo-YI-iDw"/>
+                                <constraint firstItem="YFr-Me-ktn" firstAttribute="leading" secondItem="NzE-y3-zFS" secondAttribute="leading" constant="12" id="CgK-hg-Tuh"/>
+                                <constraint firstAttribute="bottom" secondItem="YFr-Me-ktn" secondAttribute="bottom" constant="12" id="Qon-m4-ctQ"/>
+                                <constraint firstAttribute="trailing" secondItem="YFr-Me-ktn" secondAttribute="trailing" constant="12" id="w5N-5S-IYA"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="rtCornerRadius">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="rtBorderWidth">
+                                    <real key="value" value="0.5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="rtBorderColor">
+                                    <color key="value" name="TextFieldBackground"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Qtm-26-Kso" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Igd-Jo-wtX"/>
+                <constraint firstAttribute="bottom" secondItem="Qtm-26-Kso" secondAttribute="bottom" id="PH9-18-F1g"/>
+                <constraint firstItem="Qtm-26-Kso" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="eGa-co-A9y"/>
+                <constraint firstItem="Qtm-26-Kso" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="m97-uD-hMq"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="549.61832061068696" y="-90.845070422535215"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="StateColor">
+            <color red="0.078431372549019607" green="0.25882352941176473" blue="0.47450980392156861" alpha="0.10000000149011612" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextFieldBackground">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="hintColor">
+            <color red="0.45098039215686275" green="0.45098039215686275" blue="0.45098039215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

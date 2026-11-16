@@ -1,0 +1,175 @@
+/* 
+  ValidationLocalized.strings
+
+ //  Created by MGAbouarab®
+  
+*/
+
+//MARK: - Name -
+"Please enter first name." = "الرجاء إدخال الاسم الأول.";
+"First name is too short." = "الاسم الأول قصير جدًا.";
+"First name is too long." = "الاسم الأول طويل جدًا.";
+"Please enter last name." = "الرجاء إدخال الاسم الأخير.";
+"Last name is too short." = "الاسم الأخير قصير جدًا.";
+"Last name is too long." = "الاسم الأخير طويل جدًا.";
+"Please enter family name." = "الرجاء إدخال اسم العائلة.";
+"Family name is too short." = "اسم العائلة قصير جدا.";
+"Family name is too long." = "اسم العائلة طويل جدًا.";
+"Please enter full name." = "الرجاء إدخال الاسم الكامل.";
+"Full name is too short." = "الاسم الكامل قصير جدا.";
+"Full name is too long." = "الاسم الكامل طويل جدًا.";
+"Please enter name." = "يرجى إدخال اسم المستخدم";
+"Name is too short." = "يجب أن يتكون اسم المستخدم من حرفين على الأقل";
+"Name is too long." = "اسم المستخدم طويل جدًا";
+"Please enter store arabic name." = "الرجاء إدخال اسم المتجر بالعربية.";
+"Store arabic name is too short." = "اسم المتجر بالعربية قصير جدًا.";
+"Store arabic name is too long." = "الاسم بالعربية طويل جدًا للمتجر.";
+"Please enter store english name." = "الرجاء إدخال اسم المتجر بالانجليزية.";
+"Store english name is too short." = "اسم المتجر بالانجليزية قصير جدًا.";
+"Store english name is too long." = "الاسم بالانجليزية طويل جدًا للمتجر.";
+"please_enter_username" = "من فضلك أدخل اسم المستخدم";
+"provider_name_empty" = "يرجى إدخال اسم مقدم الخدمة";
+"provider_name_too_short" = "اسم مقدم الخدمة يجب ألا يقل عن حرفين";
+"provider_name_too_long" = "اسم مقدم الخدمة طويل جدًا";
+
+//MARK: - Phone -
+"Please enter your phone number." = "يرجى إدخال رقم الجوال الخاص بك";
+"invalid_saudi_phone" = "يرجى إدخال رقم جوال سعودي صحيح يبدأ بـ 5 ويتكون من 9 أرقام";
+"Phone number must be 9 or 10 digits" = "يجب أن يكون رقم الجوال 9 أو 10 أرقام";
+"Please enter correct whatsApp number." = "الرجاء إدخال رقم واتساب صحيح.";
+"enter_new_phone_number" = "يرجى إدخال رقم الجوال الجديد";
+
+//MARK: - Verification Code -
+"Please enter verification code" = "الرجاء إدخال رمز التحقق";
+"Verification Code should be 4 digits." = "يجب أن يتكون رمز التحقق من 4 أرقام.";
+
+//MARK: - Email -
+"Please enter email field." = "الرجاء إدخال حقل البريد الإلكتروني.";
+"Please enter correct email address." = "البريد الإلكتروني غير صحيح، يرجى إدخال بريد إلكتروني صالح مثل example@gmail.com";
+
+//MARK: - Passwords -
+"Please enter password field." = "الرجاء إدخال كلمة المرور";
+"Password is too short, it should be 8 characters at least." = "كلمة المرور قصيرة جدًا ، يجب أن تتكون من 8 أحرف أو أرقام على الأقل";
+"Please enter new password field." = "الرجاء إدخال كلمة المرور الجديدة";
+"New password is too short, it should be 8 characters at least." = "كلمة المرور الجديدة قصيرة جدًا ، يجب أن تتكون من 8 أحرف أو أرقام على الأقل.";
+"Please enter old password field." = "الرجاء إدخال كلمة المرور الحالية";
+"Old password is too short, it should be 8 characters at least." = "كلمة المرور الحالية قصيرة جدًا ، يجب أن تتكون من 8 أحرف أو أرقام على الأقل.";
+"Please enter confirm new password field." = "الرجاء إدخال تأكيد كلمة المرور الجديدة";
+"Please enter confirm password field." = "الرجاء إدخال تأكيد كلمة المرور";
+"passwords_do_not_match" = "كلمة المرور وتأكيد كلمة المرور غير متطابقتين";
+"Please read and agree our terms and conditions first" = "يرجى قراءة الشروط والأحكام الخاصة بنا والموافقة عليها أولاً";
+"empty_current_password" = "أدخل كلمة المرور الحالية";
+//MARK: - Locations -
+"Please select country." = "الرجاء تحديد الدولة.";
+"Please select governorate" = "الرجاء تحديد المحافظة";
+"Please select city." = "الرجاء تحديد المدينة";
+"Please select the floor" = "الرجاء تحديد الطابق";
+"Please select area." = "الرجاء تحديد المنطقة.";
+"Please enter street name." = "الرجاء إدخال اسم الشارع.";
+"Please enter address type." = "الرجاء إدخال نوع العنوان.";
+"Please select the location." = "الرجاء تحديد الموقع الجغرافي الخاص بك";
+"Please write address details" = "الرجاء كتابة تفاصيل العنوان";
+
+//MARK: - Images -
+"Please pick cover picture." = "الرجاء اختيار صورة الغلاف.";
+"Please pick your profile picture." = "يرجى اختيار صورة ملفك الشخصي.";
+"Please pick license picture." = "الرجاء اختيار صورة الترخيص.";
+"Please pick product image." = "الرجاء اختيار صورة المنتج.";
+
+//MARK: - Cars -
+"Please pick car picture" = "الرجاء اختيار صورة السيارة";
+"Please enter car plate number." = "الرجاء إدخال رقم لوحة السيارة.";
+"Please select car model." = "الرجاء تحديد موديل السيارة.";
+"Please Select car type." = "الرجاء تحديد نوع السيارة.";
+
+//MARK: - Date -
+"Please enter the age." = "الرجاء إدخال العمر.";
+"If it is your age, please grow up first =D." = "إذا كان هذا هو عمرك ، فالرجاء أن تكبر أولاً.";
+"Please select older date." = "يرجى تحديد تاريخ أقدم.";
+"Please select newer date." = "الرجاء تحديد تاريخ أحدث.";
+"Please select the date." = "الرجاء تحديد التاريخ.";
+"Please select the time." = "الرجاء اختيار الوقت";
+"Please choose a time to continue" = "يرجى اختيار وقت للمتابعة";
+//MARK: - Message -
+"Please enter message title" = "الرجاء إدخال موضوع الرسالة";
+"Please enter your message" = "الرجاء إدخال نص الرسالة";
+"Please enter message subject" = "يرجى إدخال موضوع الرسالة";
+"Please enter title type" = "الرجاء إدخال نوع العنوان";
+"Please choose contact reason" = "الرجاء إدخال سبب التواصل";
+
+//MARK: - Bank -
+"Please enter bank account holder name" = "الرجاء إدخال اسم صاحب الحساب المصرفي";
+"Please enter bank name" = "الرجاء إدخال اسم البنك";
+"Please select bank transfer image" = "الرجاء تحديد صورة التحويل المصرفي";
+"Please enter from bank name" = "الرجاء إدخال من اسم البنك";
+"Please enter bank account number" = "الرجاء إدخال رقم الحساب المصرفي";
+"invalid_saudi_iban" = "رقم الآيبان غير صحيح. يجب أن يبدأ بـ SA ويتكون من 22 رقم";
+"invalid_saudi_bank_account_number" = "رقم الحساب البنكي غير صحيح. يرجى إدخال رقم حساب صحيح";
+//MARK: - category -
+"Please Select category" = "الرجاء تحديد القسم";
+"Please enter price before" = "الرجاء إدخال السعر قبل";
+"Please enter price after" = "الرجاء إدخال السعر بعد";
+"price before is smaller than price after" = "السعر قبل أقل من السعر بعد";
+"Please enter description" = "الرجاء إدخال الوصف";
+
+"Please select the topic" = "الرجاء اختيار الموضوع";
+"Please select the inquiry" = "الرجاء اختيار نوع الإستعلام";
+"main_category_required" = "يرجى اختيار أحد الأقسام الرئيسية";
+
+//MARK: - Empty Field -
+"Please select a service." = "الرجاء اختيار الخدمة";
+"empty_product_type" = "يرجى إدخال نوع المنتج";
+"empty_required_quantity" = "يرجى إدخال الكمية المطلوبة";
+"empty_product_specifications" = "يرجى إدخال مواصفات المنتج";
+"empty_payment_method" = "يرجى اختيار طريقة الدفع";
+"cancel_order_reason_required" = "يرجى تحديد سبب إلغاء الطلب قبل المتابعة";
+"reject_invoice_reason_required" = "يرجى تحديد سبب رفض الفاتورة قبل المتابعة";
+"payment_method_required" = "يرجى اختيار طريقة الدفع قبل المتابعة";
+"selected_image_validation" = "يرجى إرفاق صورة للمتابعة";
+//MARK: - Gender -
+"Please select a gender" = "يرجى اختيار الجنس";
+
+//MARK: - Complaint -
+"Please enter complaint title" = "يرجى إدخال عنوان الشكوى";
+"Please enter complaint details" = "يرجى إدخال تفاصيل الشكوى";
+"enter_complaint_reason" = "يرجى إدخال سبب الشكوى";
+
+
+"Please enter your notes to continue" = "يرجى إدخال ملاحظاتك للمتابعة";
+"Please enter reason to continue" = "الرجاء إدخال السبب للمتابعة";
+"Please rate by selecting stars" = "الرجاء التقييم عبر اختيار النجوم";
+
+
+//MARK: - Ratings -
+"empty_rating_stars" = "يرجى اختيار التقييم عبر النجوم";
+"empty_rating_comment" = "يرجى كتابة تعليقك";
+
+//MARK: - Wallet -
+"emptyAmount" = "يرجى إدخال مبلغ الشحن ";
+"invalidAmount" = "المبلغ الذي أدخلته غير صالح";
+
+"validation.execution_date" = "يرجى اختيار تاريخ التنفيذ";
+"validation.execution_time" = "يرجى اختيار وقت التنفيذ";
+"validation.execution_location" = "يرجى اختيار موقع التنفيذ";
+"validation.complaint_desc" =  "يرجى كتابة وصف المشكلة";
+
+//MARK: - Service -
+"empty_service_price" = "يرجى إدخال سعر الخدمة";
+"invalid_service_price" = "يرجى إدخال سعر خدمة صحيح";
+"service_price_minimum" = "يجب ألا يقل سعر الخدمة عن 30";
+"empty_service_description" = "يرجى إدخال وصف الخدمة";
+"short_service_description" = "وصف الخدمة قصير جدًا";
+"service_name_required" = "يرجى إدخال اسم الخدمة";
+"service_name_min_length" = "اسم الخدمة يجب ألا يقل عن حرفين";
+
+"enter_security_code_to_confirm" = "يرجى إدخال كود الضمان لتأكيد الإنهاء";
+"Please choose language to continue " = "يرجى اختيار لغة للمتابعة";
+
+//MARK: - Visit Price -
+"empty_visit_price" = "يرجى إدخال سعر الزيارة";
+"invalid_visit_price" = "يرجى إدخال سعر زيارة صحيح";
+"visit_price_minimum" = "يجب ألا يقل سعر الزيارة عن 30";
+
+//MARK: - Commercial Registration -
+"empty_commercial_registration_number" = "يرجى إدخال رقم السجل التجاري";
+"empty_commercial_file" = "يرجى إرفاق ملف السجل التجاري (PDF)";

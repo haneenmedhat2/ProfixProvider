@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FinancialStatusCell" customModule="ProfixProvider" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="392" height="62"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="392" height="62"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X7p-Zv-jPa" userLabel="statusView">
+                        <rect key="frame" x="0.0" y="0.0" width="392" height="62"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJA-nZ-XCo" userLabel="statusLabel">
+                                <rect key="frame" x="16" y="12" width="360" height="38"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="order_accepted_by_company"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="WJA-nZ-XCo" secondAttribute="bottom" constant="12" id="H6D-s3-U6M"/>
+                            <constraint firstItem="WJA-nZ-XCo" firstAttribute="leading" secondItem="X7p-Zv-jPa" secondAttribute="leading" constant="16" id="J8b-n8-2Zf"/>
+                            <constraint firstItem="WJA-nZ-XCo" firstAttribute="top" secondItem="X7p-Zv-jPa" secondAttribute="top" constant="12" id="Lp4-oq-Bic"/>
+                            <constraint firstAttribute="trailing" secondItem="WJA-nZ-XCo" secondAttribute="trailing" constant="16" id="YQh-kh-MMZ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                <color key="value" name="TouchBarBezel"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="X7p-Zv-jPa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Cwd-IT-Cwl"/>
+                <constraint firstItem="X7p-Zv-jPa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="J6Z-XU-lJy"/>
+                <constraint firstAttribute="bottom" secondItem="X7p-Zv-jPa" secondAttribute="bottom" id="mkU-cz-9p8"/>
+                <constraint firstAttribute="trailing" secondItem="X7p-Zv-jPa" secondAttribute="trailing" id="pMY-SP-L6k"/>
+            </constraints>
+            <size key="customSize" width="392" height="62"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="rtCornerRadius">
+                    <real key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="statusLabel" destination="WJA-nZ-XCo" id="uwB-0l-GQG"/>
+                <outlet property="statusView" destination="X7p-Zv-jPa" id="Sa5-EQ-seO"/>
+            </connections>
+            <point key="canvasLocation" x="280.91603053435114" y="130.98591549295776"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="TouchBarBezel">
+            <color red="0.79607843137254897" green="0.18823529411764706" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

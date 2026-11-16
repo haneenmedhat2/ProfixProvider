@@ -1,0 +1,16 @@
+/* 
+  InfoPlist.strings
+
+ Created by MGAbouarab®
+  
+*/
+
+
+"CFBundleDisplayName" = "Profix مقدم خدمة";
+"NSCameraUsageDescription" = "يحتاج الي اذنك لفتح الكاميرا لتحميل صوره طلبك";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = " يريد الوصول إلى موقعك للحصول على أداء أفضل والسماح لك بالوصول إلى أقرب المواقع";
+"NSLocationAlwaysUsageDescription" = "نستخدم موقعك لعرض مقدمي الخدمات الأقرب إليك وتسريع تنفيذ الطلب";
+"NSLocationWhenInUseUsageDescription" = "نستخدم موقعك لعرض مقدمي الخدمات الأقرب إليك وتسريع تنفيذ الطلب";
+"NSPhotoLibraryUsageDescription" = "  يحتاج إلى إذنك لفتح معرض الصور الخاص بك ليتمكن من تحميل صور طلبك";
+"NSMicrophoneUsageDescription" = " يريد إذنك للوصول إلى الميكروفون للسماح لك بإرسال رسائل صوتية";
+

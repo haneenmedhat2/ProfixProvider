@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecurityCodePopup" customModule="ProfixProvider" customModuleProvider="target">
+            <connections>
+                <outlet property="backView" destination="QQX-TR-BiQ" id="3OJ-gd-sLb"/>
+                <outlet property="contentView" destination="lUt-Kw-fWn" id="wCs-fv-337"/>
+                <outlet property="securityCodeTextField" destination="BRd-fK-NcJ" id="GXL-DZ-JSb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QQX-TR-BiQ" userLabel="BackView">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="103.66666666666669" translatesAutoresizingMaskIntoConstraints="NO" id="lUt-Kw-fWn" userLabel="ContentView">
+                    <rect key="frame" x="0.0" y="567.66666666666663" width="393" height="284.33333333333337"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ke7-fd-keN" userLabel="ContainerStackView">
+                            <rect key="frame" x="16" y="16.000000000000014" width="361" height="244.33333333333337"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VpO-jS-uYp" userLabel="TitleStackView">
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="19.333333333333332"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Language" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FeS-oQ-qNW">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="19.333333333333332"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="security_code"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sdU-8I-22e">
+                                    <rect key="frame" x="0.0" y="35.333333333333371" width="361" height="1"/>
+                                    <color key="backgroundColor" name="separatorLine"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="Jkw-WH-uoY"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BRd-fK-NcJ" userLabel="securityCodeTextField" customClass="GeneralTextField" customModule="ProfixProvider" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="52.333333333333371" width="361" height="128"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRequiredProperty" value="NO"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isLabelHidden" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="stackBorderColor">
+                                            <color key="value" name="TextFieldBorder"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="keyboardTypeRawValue">
+                                            <integer key="value" value="11"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="titleTxt" value="security_code"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolderTxt" value="add_security_code"/>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="icon" value="document 1"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WTr-i2-Ikp" userLabel="confirmBtn" customClass="MainButton" customModule="ProfixProvider" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="196.33333333333337" width="361" height="48"/>
+                                    <color key="backgroundColor" name="Main"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="48" id="mo6-iU-fbn"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Send"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="confirm_completion"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="didTapConfirm:" destination="-1" eventType="touchUpInside" id="ArB-FH-UG2"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" name="TextFieldBackground"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ke7-fd-keN" secondAttribute="trailing" constant="16" id="2hX-G1-mF8"/>
+                        <constraint firstItem="ke7-fd-keN" firstAttribute="top" secondItem="lUt-Kw-fWn" secondAttribute="top" constant="16" id="OdU-9o-EfK"/>
+                        <constraint firstAttribute="bottom" secondItem="ke7-fd-keN" secondAttribute="bottom" constant="24" id="aF1-l7-shg"/>
+                        <constraint firstItem="ke7-fd-keN" firstAttribute="leading" secondItem="lUt-Kw-fWn" secondAttribute="leading" constant="16" id="mlC-QH-OKd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="lUt-Kw-fWn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1hj-kX-kel"/>
+                <constraint firstItem="QQX-TR-BiQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="276-Uf-mrN"/>
+                <constraint firstItem="QQX-TR-BiQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4dy-IP-xeV"/>
+                <constraint firstItem="lUt-Kw-fWn" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="7tU-Jr-exU"/>
+                <constraint firstItem="QQX-TR-BiQ" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="biK-4f-dsc"/>
+                <constraint firstAttribute="bottom" secondItem="QQX-TR-BiQ" secondAttribute="bottom" id="tcS-fM-ans"/>
+                <constraint firstAttribute="bottom" secondItem="lUt-Kw-fWn" secondAttribute="bottom" id="xVh-IE-YoF"/>
+            </constraints>
+            <point key="canvasLocation" x="-124.42748091603053" y="126.7605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="document 1" width="24" height="24"/>
+        <namedColor name="Main">
+            <color red="0.078431372549019607" green="0.25882352941176473" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextFieldBackground">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextFieldBorder">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="separatorLine">
+            <color red="0.65098039215686276" green="0.65098039215686276" blue="0.65098039215686276" alpha="0.20000000298023224" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImagePickerView" customModule="Waraqa" customModuleProvider="target">
+            <connections>
+                <outlet property="cameraPickerIcon" destination="4SE-if-h39" id="FTB-Sp-B8I"/>
+                <outlet property="userImageView" destination="sk2-fJ-2IO" id="UJd-Fc-8gZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="313" height="221"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8oF-S9-moW">
+                    <rect key="frame" x="0.0" y="0.0" width="313" height="221"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nxh-6j-Ndi" userLabel="ImageStackView">
+                            <rect key="frame" x="98.666666666666686" y="52.666666666666657" width="116" height="116"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="sk2-fJ-2IO">
+                                    <rect key="frame" x="0.0" y="0.0" width="116" height="116"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="116" id="LFZ-cw-vty"/>
+                                        <constraint firstAttribute="width" secondItem="sk2-fJ-2IO" secondAttribute="height" multiplier="1:1" id="zdT-0q-tlr"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                        </stackView>
+                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cameraPicker" translatesAutoresizingMaskIntoConstraints="NO" id="4SE-if-h39">
+                            <rect key="frame" x="134.66666666666666" y="136.66666666666666" width="44" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="KrO-jK-xlB"/>
+                                <constraint firstAttribute="width" constant="44" id="tv1-Mp-j1N"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" name="lightGreen"/>
+                    <constraints>
+                        <constraint firstItem="4SE-if-h39" firstAttribute="bottom" secondItem="nxh-6j-Ndi" secondAttribute="bottom" constant="12" id="ZoE-iw-QRe"/>
+                        <constraint firstItem="4SE-if-h39" firstAttribute="centerX" secondItem="8oF-S9-moW" secondAttribute="centerX" id="bh3-1S-HBw"/>
+                        <constraint firstItem="nxh-6j-Ndi" firstAttribute="centerY" secondItem="8oF-S9-moW" secondAttribute="centerY" id="h8v-C3-aFW"/>
+                        <constraint firstItem="nxh-6j-Ndi" firstAttribute="centerX" secondItem="8oF-S9-moW" secondAttribute="centerX" id="xAL-Zg-Z4o"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="lightGreen"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="8oF-S9-moW" secondAttribute="bottom" id="U94-Qo-Cpj"/>
+                <constraint firstItem="8oF-S9-moW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="XGU-mO-FVt"/>
+                <constraint firstItem="8oF-S9-moW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ahm-sb-iVq"/>
+                <constraint firstItem="8oF-S9-moW" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="hIh-yU-BwX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="110.68702290076335" y="237.67605633802819"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Avatar" width="79.333335876464844" height="79"/>
+        <image name="cameraPicker" width="44.333332061767578" height="44.666667938232422"/>
+        <namedColor name="lightGreen">
+            <color red="0.87058823529411766" green="1" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,42 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "5eM-7d-zyw.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Phone number\"; ObjectID = \"5eM-7d-zyw\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Phone number"
+          }
+        }
+      }
+    },
+    "MUy-ne-Id4.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"+966\"; ObjectID = \"MUy-ne-Id4\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "+966"
+          }
+        }
+      }
+    },
+    "XKY-Pk-3Px.placeholder" : {
+      "comment" : "Class = \"UITextField\"; placeholder = \"  Enter phone number\"; ObjectID = \"XKY-Pk-3Px\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "  Enter phone number"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

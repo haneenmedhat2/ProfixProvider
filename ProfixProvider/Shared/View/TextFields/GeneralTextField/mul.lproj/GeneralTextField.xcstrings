@@ -1,0 +1,42 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "bkT-2o-Ucq.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Full name\"; ObjectID = \"bkT-2o-Ucq\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Full name"
+          }
+        }
+      }
+    },
+    "p4k-R2-OIN.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"*\"; ObjectID = \"p4k-R2-OIN\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "*"
+          }
+        }
+      }
+    },
+    "zi5-ka-jSJ.placeholder" : {
+      "comment" : "Class = \"UITextField\"; placeholder = \"Please enter full name here..\"; ObjectID = \"zi5-ka-jSJ\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Please enter full name here.."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

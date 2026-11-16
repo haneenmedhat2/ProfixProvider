@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OrderDetailsVC" customModule="ProfixProvider" customModuleProvider="target">
+            <connections>
+                <outlet property="StartOrderButton" destination="Q7i-Wg-jLE" id="Ik9-Rg-eS6"/>
+                <outlet property="acceptRefuseDateBtnStackView" destination="Rgc-nv-4iL" id="MTC-FI-Uk7"/>
+                <outlet property="acceptRefuseOrderBtnStackView" destination="alN-Qf-0gR" id="KVe-Sl-HZN"/>
+                <outlet property="arrivedToCustomerButton" destination="OK9-96-TAy" id="U3j-Ah-Aje"/>
+                <outlet property="cancellationView" destination="dKu-q7-NNF" id="pE7-Vh-WJ2"/>
+                <outlet property="clientDetailsView" destination="jWW-kH-UBH" id="yLD-9E-tDd"/>
+                <outlet property="containerStackView" destination="CSF-HM-BRJ" id="6CG-Dm-xk9"/>
+                <outlet property="feedbackView" destination="7ov-U7-FBA" id="lQ5-lz-bcg"/>
+                <outlet property="finishOrderBtnStackView" destination="4Gs-m8-Tyu" id="2UO-4L-DmB"/>
+                <outlet property="geograpgicLocationView" destination="B1i-Nf-k9H" id="hUN-lx-NYP"/>
+                <outlet property="lastFinishOrderBtn" destination="ZQI-8b-hEe" id="STp-VA-onc"/>
+                <outlet property="onTheWayButton" destination="p2g-ty-3MW" id="kYg-bC-epE"/>
+                <outlet property="orderDetailsView" destination="v5T-ld-gQm" id="er4-9e-S2I"/>
+                <outlet property="orderNotesLabel" destination="061-4G-UCo" id="j4v-Dj-jsq"/>
+                <outlet property="orderNotesView" destination="SmF-H0-LSw" id="HDL-4A-zVP"/>
+                <outlet property="orderSummryView" destination="qKH-kg-BIF" id="LPG-tH-J4S"/>
+                <outlet property="problemDescView" destination="pGI-Bl-txH" id="KN1-Ua-0Y5"/>
+                <outlet property="requestedServicesView" destination="req-ser-v01" id="req-out-v01"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xtj-42-W0C">
+                    <rect key="frame" x="0.0" y="118" width="393" height="342"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="CSF-HM-BRJ" userLabel="ContainerStackView">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="1090"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SmF-H0-LSw" userLabel="orderNotesView">
+                                    <rect key="frame" x="16" y="16" width="361" height="50"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="061-4G-UCo">
+                                            <rect key="frame" x="12" y="12" width="337" height="26"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" name="errorColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="order_accepted_by_company"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" name="AlphaRed"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="061-4G-UCo" secondAttribute="trailing" constant="12" id="YD0-oG-uW2"/>
+                                        <constraint firstItem="061-4G-UCo" firstAttribute="top" secondItem="SmF-H0-LSw" secondAttribute="top" constant="12" id="nOh-Mm-bQZ"/>
+                                        <constraint firstAttribute="bottom" secondItem="061-4G-UCo" secondAttribute="bottom" constant="12" id="nzp-ZG-YlE"/>
+                                        <constraint firstItem="061-4G-UCo" firstAttribute="leading" secondItem="SmF-H0-LSw" secondAttribute="leading" constant="12" id="trD-0E-OaX"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                            <integer key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                            <color key="value" name="TouchBarBezel"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="rtCornerRadius">
+                                            <real key="value" value="12"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="jWW-kH-UBH" customClass="ClientDetailsView" customModule="ProfixProvider" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="82" width="361" height="128"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="v5T-ld-gQm" userLabel="OrderDetailsView" customClass="OrderSummaryView" customModule="ProfixProvider" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="226" width="361" height="128"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="req-ser-v01" userLabel="RequestedServicesView" customClass="OrderSummaryView" customModule="ProfixProvider" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="370" width="361" height="128"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="pGI-Bl-txH" customClass="ProblemDescView" customModule="ProfixProvider" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="514" width="361" height="128"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="B1i-Nf-k9H" customClass="GeographicLocationView" customModule="ProfixProvider" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="514" width="361" height="128"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="qKH-kg-BIF" customClass="OrderSummaryView" customModule="ProfixProvider" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="658" width="361" height="128"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="dKu-q7-NNF" userLabel="CancellationView" customClass="ContextView" customModule="ProfixProvider" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="802" width="361" height="128"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <view contentMode="scaleToFill" placeholderIntrinsicWidth="361" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="7ov-U7-FBA" userLabel="FeedbackView" customClass="ContextView" customModule="ProfixProvider" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="946" width="361" height="128"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                            </subviews>
+                            <edgeInsets key="layoutMargins" top="16" left="16" bottom="16" right="16"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="CSF-HM-BRJ" firstAttribute="bottom" secondItem="6wb-Na-1Qy" secondAttribute="bottom" id="E1B-Gf-ESo"/>
+                        <constraint firstItem="CSF-HM-BRJ" firstAttribute="width" secondItem="BgG-d9-Lo3" secondAttribute="width" id="cxZ-AB-Obi"/>
+                        <constraint firstItem="CSF-HM-BRJ" firstAttribute="trailing" secondItem="6wb-Na-1Qy" secondAttribute="trailing" id="gcE-Qy-qgk"/>
+                        <constraint firstItem="CSF-HM-BRJ" firstAttribute="leading" secondItem="6wb-Na-1Qy" secondAttribute="leading" id="rPy-6N-JMF"/>
+                        <constraint firstItem="CSF-HM-BRJ" firstAttribute="top" secondItem="6wb-Na-1Qy" secondAttribute="top" id="zo0-hO-4z6"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="6wb-Na-1Qy"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="BgG-d9-Lo3"/>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oEu-sR-eEo" userLabel="ButtonView">
+                    <rect key="frame" x="0.0" y="460" width="393" height="392"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Llj-mN-kno" userLabel="ButtonsStackView">
+                            <rect key="frame" x="16" y="16" width="361" height="352"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2g-ty-3MW" userLabel="OnTheWayButton" customClass="MainButton" customModule="ProfixProvider" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="32"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Button"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="on_the_way_to_customer"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="didTapOnTheWay:" destination="-1" eventType="touchUpInside" id="dWg-ht-lfs"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OK9-96-TAy" userLabel="ArrivdToCustomerButton" customClass="MainButton" customModule="ProfixProvider" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="40" width="361" height="32"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Button"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="arrived_to_customer"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="didTapArrivedToCustomer:" destination="-1" eventType="touchUpInside" id="4yP-de-Tkz"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7i-Wg-jLE" userLabel="StartOrderButton" customClass="MainButton" customModule="ProfixProvider" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="80" width="361" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="48" id="Ng7-by-jK6"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="start_execution"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="didTapStartOrder:" destination="-1" eventType="touchUpInside" id="uFS-js-C95"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQI-8b-hEe" userLabel="lastFinishOrderButton" customClass="MainButton" customModule="ProfixProvider" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="136" width="361" height="48"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="48" id="A6K-He-9MF"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="finish_order"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="didTapLastFinishOrder:" destination="-1" eventType="touchUpInside" id="6Ei-P0-UPB"/>
+                                    </connections>
+                                </button>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="alN-Qf-0gR" userLabel="AcceptRefuseOrderBtnStackView">
+                                    <rect key="frame" x="0.0" y="192" width="361" height="48"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJi-gy-d03" userLabel="acceptOrderButton" customClass="MainButton" customModule="ProfixProvider" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="48"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="48" id="zXO-tU-12s"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Button"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="accept"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="didTapAcceptOrder:" destination="-1" eventType="touchUpInside" id="pov-bp-Q92"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxX-Ia-LBn" userLabel="rejectIOrderButton">
+                                            <rect key="frame" x="188.66666666666663" y="0.0" width="172.33333333333337" height="48"/>
+                                            <color key="backgroundColor" name="errorColor"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Button"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="reject"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="rtCornerRadius">
+                                                    <real key="value" value="12"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="didTapRejectOrder:" destination="-1" eventType="touchUpInside" id="2D3-RR-oMu"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Rgc-nv-4iL" userLabel="AcceptRefuseDateBtnStackView">
+                                    <rect key="frame" x="0.0" y="248" width="361" height="48"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQj-cC-3eV" userLabel="acceptDateButton" customClass="MainButton" customModule="ProfixProvider" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="48"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="48" id="Lbw-0u-J2f"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Button"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="accept"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="didTapAcceptDate:" destination="-1" eventType="touchUpInside" id="dbR-wx-Pz9"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TFd-6D-epJ" userLabel="refuseDateButton">
+                                            <rect key="frame" x="188.66666666666663" y="0.0" width="172.33333333333337" height="48"/>
+                                            <color key="backgroundColor" name="errorColor"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Button"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="reject"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="rtCornerRadius">
+                                                    <real key="value" value="12"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="didTapRefuseDate:" destination="-1" eventType="touchUpInside" id="nIF-3R-gpF"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="4Gs-m8-Tyu" userLabel="FinishOrderBtnStackView">
+                                    <rect key="frame" x="0.0" y="304" width="361" height="48"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2kn-AT-h4o" userLabel="createInvoiceButton" customClass="MainButton" customModule="ProfixProvider" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="48"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="48" id="f0L-eA-o14"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Button"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="issue_invoice"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="didTapCreateInvoice:" destination="-1" eventType="touchUpInside" id="jXB-cE-PPe"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Eu-mb-BN1" userLabel="finishOrderButton">
+                                            <rect key="frame" x="188.66666666666663" y="0.0" width="172.33333333333337" height="48"/>
+                                            <color key="backgroundColor" name="whiteColor"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Button">
+                                                <color key="titleColor" name="Main"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="finish_order"/>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="rtCornerRadius">
+                                                    <real key="value" value="12"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="rtBorderColor">
+                                                    <color key="value" name="Main"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="rtBorderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="didTapFinishOrder:" destination="-1" eventType="touchUpInside" id="7Um-LI-BDX"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" name="TextFieldBackground"/>
+                    <constraints>
+                        <constraint firstItem="Llj-mN-kno" firstAttribute="leading" secondItem="oEu-sR-eEo" secondAttribute="leading" constant="16" id="9sd-FK-XAx"/>
+                        <constraint firstItem="Llj-mN-kno" firstAttribute="top" secondItem="oEu-sR-eEo" secondAttribute="top" constant="16" id="U83-HV-5Rm"/>
+                        <constraint firstAttribute="bottom" secondItem="Llj-mN-kno" secondAttribute="bottom" constant="24" id="qXB-Rt-pkl"/>
+                        <constraint firstAttribute="trailing" secondItem="Llj-mN-kno" secondAttribute="trailing" constant="16" id="vnC-BA-5Fd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Xtj-42-W0C" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ASP-UM-rDb"/>
+                <constraint firstItem="Xtj-42-W0C" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DN3-Bx-H48"/>
+                <constraint firstItem="Xtj-42-W0C" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Lgh-jE-8Sb"/>
+                <constraint firstItem="oEu-sR-eEo" firstAttribute="top" secondItem="Xtj-42-W0C" secondAttribute="bottom" id="S2C-pn-Ihn"/>
+                <constraint firstItem="oEu-sR-eEo" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="UMt-Cl-aCh"/>
+                <constraint firstAttribute="bottom" secondItem="oEu-sR-eEo" secondAttribute="bottom" id="YCJ-g7-Tih"/>
+                <constraint firstItem="oEu-sR-eEo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="x5u-8M-JMj"/>
+            </constraints>
+            <point key="canvasLocation" x="-48" y="127"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AlphaRed">
+            <color red="0.89803921568627454" green="0.035294117647058823" blue="0.18823529411764706" alpha="0.10000000149011612" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Main">
+            <color red="0.078431372549019607" green="0.25882352941176473" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextFieldBackground">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TouchBarBezel">
+            <color red="0.79607843137254897" green="0.18823529411764706" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="errorColor">
+            <color red="0.89803921568627454" green="0.035294117647058823" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="whiteColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

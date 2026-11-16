@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TransferImageCell" customModule="ProfixProvider" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="124"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="340" height="124"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2KF-wm-2Rh" userLabel="ContainerView">
+                        <rect key="frame" x="0.0" y="0.0" width="340" height="124"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="29.png" translatesAutoresizingMaskIntoConstraints="NO" id="KA2-qm-eD8">
+                                <rect key="frame" x="8" y="8" width="324" height="108"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rtCornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" name="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="KA2-qm-eD8" secondAttribute="bottom" constant="8" id="9R6-xe-TvF"/>
+                            <constraint firstAttribute="trailing" secondItem="KA2-qm-eD8" secondAttribute="trailing" constant="8" id="Hd5-17-qLx"/>
+                            <constraint firstItem="KA2-qm-eD8" firstAttribute="leading" secondItem="2KF-wm-2Rh" secondAttribute="leading" constant="8" id="I92-If-gpx"/>
+                            <constraint firstItem="KA2-qm-eD8" firstAttribute="top" secondItem="2KF-wm-2Rh" secondAttribute="top" constant="8" id="edq-G2-dq1"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="rtCornerRadius">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="2KF-wm-2Rh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Muz-qP-HhY"/>
+                <constraint firstAttribute="bottom" secondItem="2KF-wm-2Rh" secondAttribute="bottom" id="NcO-B2-iaB"/>
+                <constraint firstItem="2KF-wm-2Rh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="STh-oR-5Hu"/>
+                <constraint firstAttribute="trailing" secondItem="2KF-wm-2Rh" secondAttribute="trailing" id="twH-IN-ubA"/>
+            </constraints>
+            <size key="customSize" width="340" height="124"/>
+            <connections>
+                <outlet property="transferImage" destination="KA2-qm-eD8" id="x2A-Au-xo6"/>
+            </connections>
+            <point key="canvasLocation" x="186.25954198473281" y="152.81690140845072"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="29.png" width="29" height="29"/>
+        <namedColor name="whiteColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

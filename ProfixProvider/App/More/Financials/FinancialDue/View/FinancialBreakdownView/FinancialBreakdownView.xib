@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FinancialBreakdownView" customModule="ProfixProvider" customModuleProvider="target">
+            <connections>
+                <outlet property="commissionLabel" destination="Tb3-Nu-SGy" id="I3v-WZ-AOp"/>
+                <outlet property="dateLabel" destination="MV9-KN-mxi" id="bIv-fj-LGh"/>
+                <outlet property="orderCostLabel" destination="Y3Q-xf-NTk" id="qoM-xv-4lc"/>
+                <outlet property="orderNumLabel" destination="hUq-jQ-FQR" id="Q1m-Bj-qpT"/>
+                <outlet property="taxValueLabel" destination="WdB-xs-FN8" id="st3-Bk-pq7"/>
+                <outlet property="totalLabel" destination="RaE-Bo-Nt4" id="oh6-P9-boV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="603" height="228"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="6g5-gg-VKS" userLabel="ContainerStackView">
+                    <rect key="frame" x="0.0" y="8" width="603" height="212"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="bef-Ls-tE3" userLabel="OrderNumStackView">
+                            <rect key="frame" x="8" y="0.0" width="587" height="47"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUq-jQ-FQR" userLabel="orderNumLabel">
+                                    <rect key="frame" x="0.0" y="0.0" width="535" height="47"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MV9-KN-mxi" userLabel="dateLabel">
+                                    <rect key="frame" x="551" y="0.0" width="36" height="47"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                    <color key="textColor" name="hintColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nmC-eX-tXb">
+                            <rect key="frame" x="0.0" y="55" width="603" height="1"/>
+                            <color key="backgroundColor" name="separatorLine"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="jqD-yE-Wbf"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="vV4-ax-Oug" userLabel="ValuesStackView">
+                            <rect key="frame" x="8" y="64" width="587" height="38"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="kwy-jf-bs4" userLabel="OrderCostStackView">
+                                    <rect key="frame" x="0.0" y="0.0" width="36" height="38"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hP-cj-EGq" userLabel="label">
+                                            <rect key="frame" x="0.0" y="0.0" width="36" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                            <color key="textColor" name="hintColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="order_amount"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3Q-xf-NTk" userLabel="orderCostLabel">
+                                            <rect key="frame" x="0.0" y="21" width="36" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="sT6-dx-IvA" userLabel="TaxValueStackView">
+                                    <rect key="frame" x="275.66666666666669" y="0.0" width="36" height="38"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cus-Ag-5TP" userLabel="label">
+                                            <rect key="frame" x="0.0" y="0.0" width="36" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                            <color key="textColor" name="hintColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="tax_value"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WdB-xs-FN8" userLabel="taxValueLabel">
+                                            <rect key="frame" x="0.0" y="21" width="36" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Ky8-pq-4OF" userLabel="CommissionStackView">
+                                    <rect key="frame" x="551" y="0.0" width="36" height="38"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9UM-86-pbf" userLabel="label">
+                                            <rect key="frame" x="0.0" y="0.0" width="36" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                            <color key="textColor" name="hintColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="commission"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tb3-Nu-SGy" userLabel="commissionLabel">
+                                            <rect key="frame" x="0.0" y="21" width="36" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ti5-R0-TML">
+                            <rect key="frame" x="0.0" y="110" width="603" height="1"/>
+                            <color key="backgroundColor" name="separatorLine"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="wpP-QS-5Y9"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="AUA-po-N9Y" userLabel="TotalStackView">
+                            <rect key="frame" x="8" y="119" width="587" height="93"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbb-Ih-vvj">
+                                    <rect key="frame" x="8" y="8" width="531" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="total_value"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RaE-Bo-Nt4" userLabel="totalLabel">
+                                    <rect key="frame" x="543" y="8" width="36" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="rtCornerRadius">
+                                    <real key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" name="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="bef-Ls-tE3" firstAttribute="leading" secondItem="6g5-gg-VKS" secondAttribute="leading" constant="8" id="6qa-Ss-yCe"/>
+                        <constraint firstAttribute="trailing" secondItem="bef-Ls-tE3" secondAttribute="trailing" constant="8" id="7t8-xU-fQU"/>
+                        <constraint firstItem="vV4-ax-Oug" firstAttribute="leading" secondItem="6g5-gg-VKS" secondAttribute="leading" constant="8" id="9vn-cn-Yyd"/>
+                        <constraint firstItem="nmC-eX-tXb" firstAttribute="leading" secondItem="6g5-gg-VKS" secondAttribute="leading" id="CBj-mT-I0F"/>
+                        <constraint firstItem="Ti5-R0-TML" firstAttribute="leading" secondItem="6g5-gg-VKS" secondAttribute="leading" id="Ngb-se-v4X"/>
+                        <constraint firstAttribute="trailing" secondItem="AUA-po-N9Y" secondAttribute="trailing" constant="8" id="Pgk-Ye-B70"/>
+                        <constraint firstItem="AUA-po-N9Y" firstAttribute="leading" secondItem="6g5-gg-VKS" secondAttribute="leading" constant="8" id="ebq-Vu-cX0"/>
+                        <constraint firstAttribute="trailing" secondItem="Ti5-R0-TML" secondAttribute="trailing" id="grZ-CH-qnJ"/>
+                        <constraint firstAttribute="trailing" secondItem="vV4-ax-Oug" secondAttribute="trailing" constant="8" id="txh-hV-gi4"/>
+                        <constraint firstAttribute="trailing" secondItem="nmC-eX-tXb" secondAttribute="trailing" id="v5U-K8-G1i"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="whiteColor"/>
+            <constraints>
+                <constraint firstItem="6g5-gg-VKS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="5Rk-yd-7E5"/>
+                <constraint firstItem="6g5-gg-VKS" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="CoE-lu-Z9h"/>
+                <constraint firstItem="6g5-gg-VKS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Fo1-mk-roC"/>
+                <constraint firstAttribute="bottom" secondItem="6g5-gg-VKS" secondAttribute="bottom" constant="8" id="i2R-FJ-omK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="6.8702290076335872" y="185.21126760563382"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="hintColor">
+            <color red="0.45098039215686275" green="0.45098039215686275" blue="0.45098039215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="separatorLine">
+            <color red="0.65098039215686276" green="0.65098039215686276" blue="0.65098039215686276" alpha="0.20000000298023224" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="whiteColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

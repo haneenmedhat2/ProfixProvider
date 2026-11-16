@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginVC" customModule="ProfixProvider" customModuleProvider="target">
+            <connections>
+                <outlet property="languageBtn" destination="SYN-cb-t9c" id="yQS-9y-gEK"/>
+                <outlet property="passwordTextField" destination="uQq-d2-qvA" id="Lng-HQ-Bub"/>
+                <outlet property="phoneTextField" destination="epz-sD-1TJ" id="CeV-gI-5Fx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQb-qK-Osy">
+                    <rect key="frame" x="0.0" y="118" width="393" height="666"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="672.66666666666663" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="uSw-Z8-0Cd" userLabel="ContentStackView">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="672.66666666666663"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Pfj-Sa-wYr" userLabel="LanguageBtnStackView">
+                                    <rect key="frame" x="16" y="16" width="361" height="34"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SYN-cb-t9c" customClass="IconTextGeneralButton" customModule="ProfixProvider" customModuleProvider="target">
+                                            <rect key="frame" x="271" y="0.0" width="90" height="34"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="rJ4-rl-QCC"/>
+                                                <constraint firstAttribute="height" constant="34" id="tBs-3J-1kG"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="btnBackgroundColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="btnBorderColor">
+                                                    <color key="value" name="Main"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="fontColor">
+                                                    <color key="value" name="Main"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="image" keyPath="iconImageName" value="language"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="buttonLabelText" value="arabic"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIcon" translatesAutoresizingMaskIntoConstraints="NO" id="AWF-5h-hDT">
+                                    <rect key="frame" x="16" y="66" width="361" height="114.66666666666669"/>
+                                </imageView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="tiS-i7-LJt" userLabel="TextFieldsStackView">
+                                    <rect key="frame" x="16" y="196.66666666666669" width="361" height="206"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" placeholderIntrinsicWidth="345" placeholderIntrinsicHeight="120" translatesAutoresizingMaskIntoConstraints="NO" id="epz-sD-1TJ" userLabel="PhoneTextField" customClass="PhoneTextField" customModule="ProfixProvider" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="120"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="titleTxt" value="phone_number"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isRequiredProperty" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isLabelHidden" value="NO"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="placeHolderTxt" value="add_phone_number"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="requiredTxt" value="*"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isRequired" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="hideRequiredLabel" value="NO"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uQq-d2-qvA" userLabel="PasswordTextField" customClass="PasswordTextField" customModule="ProfixProvider" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="124" width="361" height="50"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isRequiredProperty" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="titleTxt" value="password"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isLabelHidden" value="NO"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="placeHolderTxt" value="add_password"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isButtonHidden" value="NO"/>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="stackBackgroundColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="requiredTxt" value="*"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="mc5-Vd-tD2" userLabel="ForgetPasswordStackView">
+                                            <rect key="frame" x="0.0" y="178" width="361" height="28"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2F-Cl-HVQ" userLabel="ForgetPassword">
+                                                    <rect key="frame" x="319" y="0.0" width="42" height="28"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" title="Button">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="forgot_password"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isUnderlined" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="didTapForgetPassword:" destination="-1" eventType="touchUpInside" id="usG-D5-F4K"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="345" placeholderIntrinsicHeight="151" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ayT-ce-chB" userLabel="Login" customClass="MainButton" customModule="ProfixProvider" customModuleProvider="target">
+                                    <rect key="frame" x="16" y="418.66666666666663" width="361" height="151"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Button"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="login"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="didTapLogin:" destination="-1" eventType="touchUpInside" id="pDq-ve-gTi"/>
+                                    </connections>
+                                </button>
+                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Tyn-iU-cki" userLabel="SignupStackView">
+                                    <rect key="frame" x="154" y="585.66666666666663" width="85" height="71"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bg9-tS-BKP">
+                                            <rect key="frame" x="0.0" y="27" width="36" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                            <color key="textColor" name="Stock"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="no_account"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pib-cW-A7N" userLabel="CreateAccount">
+                                            <rect key="frame" x="40" y="21" width="45" height="29"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Button">
+                                                <color key="titleColor" name="Main"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="create_new_account"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isUnderlined" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="didTapCreateAccount:" destination="-1" eventType="touchUpInside" id="Zpa-BY-9U0"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="AWF-5h-hDT" firstAttribute="leading" secondItem="uSw-Z8-0Cd" secondAttribute="leading" constant="16" id="BPy-gd-3Rj"/>
+                                <constraint firstItem="tiS-i7-LJt" firstAttribute="leading" secondItem="uSw-Z8-0Cd" secondAttribute="leading" constant="16" id="FJv-NE-pLr"/>
+                                <constraint firstAttribute="trailing" secondItem="tiS-i7-LJt" secondAttribute="trailing" constant="16" id="HqA-uD-x3Y"/>
+                                <constraint firstItem="ayT-ce-chB" firstAttribute="leading" secondItem="uSw-Z8-0Cd" secondAttribute="leading" constant="16" id="J5V-5x-9V8"/>
+                                <constraint firstAttribute="trailing" secondItem="ayT-ce-chB" secondAttribute="trailing" constant="16" id="Uqg-yv-wr0"/>
+                                <constraint firstAttribute="trailing" secondItem="AWF-5h-hDT" secondAttribute="trailing" constant="16" id="Wcd-os-cIT"/>
+                                <constraint firstAttribute="trailing" secondItem="Pfj-Sa-wYr" secondAttribute="trailing" constant="16" id="rt1-Nf-wgC"/>
+                                <constraint firstItem="Pfj-Sa-wYr" firstAttribute="leading" secondItem="uSw-Z8-0Cd" secondAttribute="leading" constant="16" id="vjo-2N-Hwi"/>
+                            </constraints>
+                            <edgeInsets key="layoutMargins" top="16" left="16" bottom="16" right="16"/>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="uSw-Z8-0Cd" firstAttribute="trailing" secondItem="f5C-bh-5Jg" secondAttribute="trailing" id="IVi-a8-0om"/>
+                        <constraint firstItem="uSw-Z8-0Cd" firstAttribute="leading" secondItem="f5C-bh-5Jg" secondAttribute="leading" id="PDb-0B-sLH"/>
+                        <constraint firstItem="uSw-Z8-0Cd" firstAttribute="top" secondItem="f5C-bh-5Jg" secondAttribute="top" id="e6j-6y-A6O"/>
+                        <constraint firstItem="uSw-Z8-0Cd" firstAttribute="width" secondItem="Wzf-H6-ymc" secondAttribute="width" id="pUF-cq-MLW"/>
+                        <constraint firstItem="uSw-Z8-0Cd" firstAttribute="bottom" secondItem="f5C-bh-5Jg" secondAttribute="bottom" id="qe3-6L-l4G"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="f5C-bh-5Jg"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="Wzf-H6-ymc"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="gQb-qK-Osy" secondAttribute="bottom" id="2wp-7w-f8a"/>
+                <constraint firstItem="gQb-qK-Osy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="99k-sE-SvO"/>
+                <constraint firstItem="gQb-qK-Osy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="GQR-ob-e8S"/>
+                <constraint firstItem="gQb-qK-Osy" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="HVM-5f-WaK"/>
+            </constraints>
+            <point key="canvasLocation" x="109.16030534351144" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="AppIcon" width="118.66666412353516" height="114.66666412353516"/>
+        <image name="language" width="24" height="24"/>
+        <namedColor name="Main">
+            <color red="0.078431372549019607" green="0.25882352941176473" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Stock">
+            <color red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

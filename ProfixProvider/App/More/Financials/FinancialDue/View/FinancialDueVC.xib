@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FinancialDueVC" customModule="ProfixProvider" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="NcF-fM-1Sd" id="IbM-BO-X5r"/>
+                <outlet property="newSettlementBtn" destination="nqX-Ek-tFI" id="yqu-6I-jR2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="666" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="u4M-NO-SBq" userLabel="ContainerStackView">
+                    <rect key="frame" x="0.0" y="118" width="393" height="666"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqX-Ek-tFI" userLabel="NewSettlementButton" customClass="MainButton" customModule="ProfixProvider" customModuleProvider="target">
+                            <rect key="frame" x="16" y="16" width="361" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="WSj-Gg-aj4"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Button"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="new_settlement"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="didTapNewSettlement:" destination="-1" eventType="touchUpInside" id="WyK-rC-Kay"/>
+                            </connections>
+                        </button>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="NcF-fM-1Sd">
+                            <rect key="frame" x="16" y="80" width="361" height="570"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iWf-qO-Abx">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <edgeInsets key="layoutMargins" top="16" left="16" bottom="16" right="16"/>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="u4M-NO-SBq" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="F5S-sN-nz0"/>
+                <constraint firstItem="u4M-NO-SBq" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="I3I-ba-cWt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="u4M-NO-SBq" secondAttribute="bottom" id="gWh-p0-HpU"/>
+                <constraint firstItem="u4M-NO-SBq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lqt-S1-bo2"/>
+            </constraints>
+            <point key="canvasLocation" x="104.58015267175573" y="126.7605633802817"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

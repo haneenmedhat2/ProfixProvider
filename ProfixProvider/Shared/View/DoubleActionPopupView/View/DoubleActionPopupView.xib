@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DoubleActionPopupView" customModule="Profix" customModuleProvider="target">
+            <connections>
+                <outlet property="backView" destination="gpV-iJ-JwU" id="QtQ-oJ-l2Q"/>
+                <outlet property="contentView" destination="Icl-A9-Tey" id="8BG-DY-yRX"/>
+                <outlet property="firstBtn" destination="dG4-E7-aQS" id="kgQ-ex-7xi"/>
+                <outlet property="imageView" destination="gxa-Yv-3ag" id="5u5-oB-GYS"/>
+                <outlet property="secBtn" destination="wOq-lW-ANo" id="4sw-rI-AUX"/>
+                <outlet property="secTitleLabel" destination="Rhe-Um-0qP" id="FNl-Ka-fXL"/>
+                <outlet property="titleLabel" destination="Vh6-kn-Dbn" id="jXc-Z2-OeA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gpV-iJ-JwU" userLabel="BackView">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="393" placeholderIntrinsicHeight="103.66666666666669" translatesAutoresizingMaskIntoConstraints="NO" id="Icl-A9-Tey" userLabel="ContentView">
+                    <rect key="frame" x="0.0" y="551" width="393" height="301"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="SGz-0l-RpI" userLabel="ContainerStackView">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="301"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uar-2p-Q1d" userLabel="ImgStackView">
+                                    <rect key="frame" x="16" y="16" width="361" height="100"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gxa-Yv-3ag">
+                                            <rect key="frame" x="130.66666666666666" y="0.0" width="100" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="gxa-Yv-3ag" secondAttribute="height" multiplier="1:1" id="Edq-mw-Vnx"/>
+                                                <constraint firstAttribute="height" constant="100" id="Vg7-Ub-cv4"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                </stackView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vh6-kn-Dbn" userLabel="mainTitle">
+                                    <rect key="frame" x="16" y="128" width="361" height="21.666666666666657"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rhe-Um-0qP" userLabel="secTitle">
+                                    <rect key="frame" x="16" y="161.66666666666663" width="361" height="19.333333333333343"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="textColor" name="hintColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="W7Z-QX-I9S" userLabel="ButtonsStackView">
+                                    <rect key="frame" x="16" y="193" width="361" height="32"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dG4-E7-aQS" customClass="MainButton" customModule="Profix" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="176.66666666666666" height="32"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Button"/>
+                                            <connections>
+                                                <action selector="didTapFirstBtn:" destination="-1" eventType="touchUpInside" id="5kE-dy-BsM"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wOq-lW-ANo">
+                                            <rect key="frame" x="184.66666666666663" y="0.0" width="176.33333333333337" height="32"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Button">
+                                                <color key="titleColor" name="Main"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="rtCornerRadius">
+                                                    <real key="value" value="12"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="rtBorderColor">
+                                                    <color key="value" name="Main"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="rtBorderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="didTapSecBtn:" destination="-1" eventType="touchUpInside" id="yIi-43-ojc"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <edgeInsets key="layoutMargins" top="16" left="16" bottom="8" right="16"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="SGz-0l-RpI" secondAttribute="bottom" id="hgv-re-64Y"/>
+                        <constraint firstAttribute="trailing" secondItem="SGz-0l-RpI" secondAttribute="trailing" id="iZN-Bm-3lm"/>
+                        <constraint firstItem="SGz-0l-RpI" firstAttribute="leading" secondItem="Icl-A9-Tey" secondAttribute="leading" id="uyZ-Wu-DxS"/>
+                        <constraint firstItem="SGz-0l-RpI" firstAttribute="top" secondItem="Icl-A9-Tey" secondAttribute="top" id="xYV-nO-lbv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Icl-A9-Tey" secondAttribute="bottom" id="2l4-yc-o2n"/>
+                <constraint firstItem="Icl-A9-Tey" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6zN-Tb-FGS"/>
+                <constraint firstItem="gpV-iJ-JwU" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="LPV-Pw-ckG"/>
+                <constraint firstItem="gpV-iJ-JwU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="k0A-sX-S54"/>
+                <constraint firstItem="gpV-iJ-JwU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="lOs-IS-d9R"/>
+                <constraint firstAttribute="bottom" secondItem="gpV-iJ-JwU" secondAttribute="bottom" id="q2P-cU-uy0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Icl-A9-Tey" secondAttribute="trailing" id="v73-80-ww0"/>
+            </constraints>
+            <point key="canvasLocation" x="5" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Main">
+            <color red="0.078431372549019607" green="0.25882352941176473" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="hintColor">
+            <color red="0.45098039215686275" green="0.45098039215686275" blue="0.45098039215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

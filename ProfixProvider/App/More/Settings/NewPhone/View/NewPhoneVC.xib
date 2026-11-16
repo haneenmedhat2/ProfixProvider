@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="24412" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24405"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewPhoneVC" customModule="Profix" customModuleProvider="target">
+            <connections>
+                <outlet property="phoneTextField" destination="kyw-ig-bs2" id="iev-L8-XyW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" placeholderIntrinsicWidth="345" placeholderIntrinsicHeight="120" translatesAutoresizingMaskIntoConstraints="NO" id="kyw-ig-bs2" userLabel="PhoneTextField" customClass="PhoneTextField" customModule="Profix" customModuleProvider="target">
+                    <rect key="frame" x="16" y="134" width="361" height="120"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="titleTxt" value="new_phone_number"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isRequiredProperty" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isLabelHidden" value="NO"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeHolderTxt" value="add_phone_number"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="requiredTxt" value="*"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GoP-Xt-BwQ" userLabel="Confirm" customClass="MainButton" customModule="Profix" customModuleProvider="target">
+                    <rect key="frame" x="16" y="270" width="361" height="32"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Button"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="xibLocKey" value="confirm"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="didTapConfirm:" destination="-1" eventType="touchUpInside" id="S3g-lf-o61"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="GoP-Xt-BwQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="bQU-bM-Eba"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kyw-ig-bs2" secondAttribute="trailing" constant="16" id="m79-5G-TOk"/>
+                <constraint firstItem="kyw-ig-bs2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="prj-Wi-Yu0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="GoP-Xt-BwQ" secondAttribute="trailing" constant="16" id="sNj-px-kFf"/>
+                <constraint firstItem="kyw-ig-bs2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="v1O-Fn-F38"/>
+                <constraint firstItem="GoP-Xt-BwQ" firstAttribute="top" secondItem="kyw-ig-bs2" secondAttribute="bottom" constant="16" id="yot-li-T7e"/>
+            </constraints>
+            <point key="canvasLocation" x="22" y="127"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,14 @@
+/* 
+  InfoPlist.strings
+
+ Created by MGAbouarab®
+  
+*/
+
+"CFBundleDisplayName" = "Profix Provider";
+"NSCameraUsageDescription" = "to pick your order picture";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "to get nearest estates around you";
+"NSLocationAlwaysUsageDescription" = "We use your location to show nearby service providers and speed up order fulfillment";
+"NSLocationWhenInUseUsageDescription" = "We use your location to show nearby service providers and speed up order fulfillment";
+"NSPhotoLibraryUsageDescription" = "to pick your order picture";
+"NSMicrophoneUsageDescription" = "to send voice messages";
